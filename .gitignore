@@ -1,0 +1,51 @@
+# Rust build artifacts
+/target/
+Cargo.lock
+
+# Debug information
+debug/
+*.pdb
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Embedded development
+*.bin
+*.hex
+*.elf
+*.map
+
+# Probe-run and debugging
+*.rtt
+
+# Local environment files
+.env
+.env.local
+
+# Documentation build
+/docs/book/
+
+# Backup files
+*.bak
+*.backup
+
+# Flycheck (Emacs syntax checking)
+flycheck_*

@@ -1,0 +1,24 @@
+[package]
+name = "docan_driver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+stm32h7xx-hal = { version = "0.15", features = ["stm32h743v"] }
+heapless = "0.8"
+nb = "1.0"
+defmt = "0.3"
+defmt-rtt = "0.4"
+panic-probe = { version = "0.3", features = ["print-defmt"] }
+
+[profile.release]
+opt-level = "s"
+debug = true
+lto = true
+codegen-units = 1
+
+[[bin]]
+name = "docan_driver"
+path = "src/main.rs"
